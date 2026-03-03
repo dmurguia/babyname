@@ -2,17 +2,20 @@ import { useHealth } from '@/hooks/useApi';
 import { Badge } from './Badge';
 import './Header.css';
 
+const USE_MOCK_DATA = !import.meta.env.VITE_API_BASE_URL ||
+  import.meta.env.VITE_API_BASE_URL === 'https://your-backend-url';
+
 export function Header() {
-  const { data: health, isLoading, error } = useHealth();
+  const { data: health, isLoading } = useHealth();
 
   const getStatusVariant = () => {
-    if (error) return 'error';
+    if (USE_MOCK_DATA) return 'warning';
     if (isLoading) return 'warning';
     return 'success';
   };
 
   const getStatusText = () => {
-    if (error) return 'Offline';
+    if (USE_MOCK_DATA) return 'Demo Mode';
     if (isLoading) return 'Connecting...';
     return 'Connected';
   };
