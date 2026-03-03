@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Local/private files that should never be public
+private/
+
+# Runtime artifacts
+*.log
+.DS_Store
