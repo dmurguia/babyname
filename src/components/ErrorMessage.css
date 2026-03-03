@@ -1,0 +1,44 @@
+.error-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--spacing-xl);
+  background: #fff5f5;
+  border: 1px solid #feb2b2;
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+.error-icon {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.error-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #c53030;
+  margin-bottom: var(--spacing-sm);
+}
+
+.error-text {
+  font-size: 0.875rem;
+  color: #742a2a;
+  line-height: 1.6;
+  max-width: 500px;
+  margin-bottom: var(--spacing-lg);
+}
+
+.error-retry {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background: #c53030;
+  color: white;
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  transition: all var(--transition-base);
+  cursor: pointer;
+}
+
+.error-retry:hover {
+  background: #9b2c2c;
+}

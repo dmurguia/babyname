@@ -1,0 +1,22 @@
+.chart-container {
+  padding: var(--spacing-lg);
+  background: var(--cream-50);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--cream-200);
+  animation: fadeIn var(--transition-slow) ease-in;
+}
+
+.chart-empty {
+  padding: var(--spacing-xl);
+  text-align: center;
+  color: var(--gray-500);
+  font-style: italic;
+}
+
+.recharts-wrapper {
+  font-family: 'Inter', sans-serif;
+}
+
+.recharts-tooltip-wrapper {
+  outline: none;
+}
